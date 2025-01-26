@@ -6,28 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .roboto-font {
+            font-family: "Roboto", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        .font-bebas {
+            font-family: "Bebas Neue", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
 
-<body>
-    <header class="bg-[#FFFBF0]">
+<body class="roboto-font ">
+    <header class="bg-[#FFFBF0] pl-4">
         <nav></nav>
         <!-- banner Start  -->
-        <section>
+        <section class="md:flex md:items-center md:justify-around">
             <div>
-                <h1 class="text-7xl uppercase
+                <h1 class="text-7xl uppercase font-bebas
                 "><span class="text-orange-300">Be the Penguins</span> <br>
                     <span class="text-stone-500">of Winter</span>
                 </h1>
                 <p>Lorem Ipsum is simply dummy text of the printing
                     and typesetting industry.</p>
-                <button>Buy Now</button>
+                <button
+                    class="px-8 py-4 bg-green-300 rounded-xl font-medium text-white h-14 bg-linear-to-r from-[#A4BC46] to-[#85A019]">Buy
+                    Now</button>
             </div>
             <div>
                 <img src="images/model.png" alt="">
             </div>
         </section>
     </header>
-    <main></main>
+    <main>
+        <!-- woman jacket section  -->
+        <section>
+            <h2 class="text-5xl uppercase text-[#363958] font-bebas">Woman Jacket</h2>
+            <!-- jacket card Container  -->
+            <div class="grid grid-cols-3">
+                <div class="p-5"><img src="images/jacket-1.png" alt="">
+                    <h2 class="text-2xl text-[#363958]  font-bold">Yellow Coat Jacket</h2>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-3xl font-bold text-[#FABE4C] pl-6">$234</h2>
+                        <button
+                            class="px-8 py-4 bg-green-300 rounded-xl font-medium text-white h-14 bg-linear-to-r from-[#A4BC46] to-[#85A019]">Buy
+                            Now</button>
+                    </div>
+                </div>
+                <div class="p-5"><img src="images/jacket-2.png" alt="">
+                    <h2 class="text-2xl text-[#363958]  font-bold">Ladies Jacket </h2>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-3xl font-bold text-[#FABE4C]">$234</h2>
+                        <button
+                            class="px-8 py-4 bg-green-300 rounded-xl font-medium text-white h-14 bg-linear-to-r from-[#A4BC46] to-[#85A019]">Buy
+                            Now</button>
+                    </div>
+                </div>
+                <div class="p-5"><img src="images/jacket-3.png" alt="">
+                    <h2 class="text-2xl font-bold text-[#363958] ">Woman Leather Jacket </h2>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-3xl font-bold text-[#FABE4C]">$234</h2>
+                        <button
+                            class="px-8 py-4 bg-green-300 rounded-xl font-medium text-white h-14 bg-linear-to-r from-[#A4BC46] to-[#85A019]">Buy
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
